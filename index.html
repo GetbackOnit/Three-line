@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼행시 생성기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">삼행시 생성기</h1>
+            <p class="subtitle">3글자를 입력하면 AI가 삼행시를 만들어드려요!</p>
+
+            <div class="input-section">
+                <input
+                    type="text"
+                    id="wordInput"
+                    class="word-input"
+                    placeholder="3글자를 입력하세요"
+                    maxlength="3"
+                >
+                <button id="generateBtn" class="generate-btn">
+                    삼행시 생성
+                </button>
+            </div>
+
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>AI가 삼행시를 작성하고 있어요...</p>
+            </div>
+
+            <div id="resultSection" class="result-section hidden">
+                <h2 class="result-title">생성된 삼행시</h2>
+                <div id="resultText" class="result-text"></div>
+            </div>
+
+            <div id="errorSection" class="error-section hidden">
+                <p id="errorText" class="error-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

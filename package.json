@@ -1,0 +1,22 @@
+{
+  "name": "three-line-generator",
+  "version": "1.0.0",
+  "description": "삼행시 생성기 웹 앱",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js",
+    "dev": "vercel dev",
+    "deploy": "vercel"
+  },
+  "keywords": ["삼행시", "claude", "ai"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "cors": "^2.8.5"
+  }
+}
