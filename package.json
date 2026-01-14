@@ -4,6 +4,9 @@
   "description": "삼행시 생성기 웹 앱",
   "main": "index.html",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "test": "node test.js",
     "start": "node server.js",
