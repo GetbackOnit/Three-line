@@ -1,7 +1,13 @@
 {
+  "buildCommand": "npm install",
   "functions": {
     "api/**/*.js": {
       "runtime": "@vercel/node@3.2.22"
+    }
+  },
+  "build": {
+    "env": {
+      "NODE_VERSION": "20"
     }
   }
 }
